@@ -1,23 +1,14 @@
 ## Hi 👋, I'm Sanka
 
-<table style="border: none; background-color: #0d1117;">
-<tr style="border: none;">
-<td width="50%" style="border: none; background-color: transparent;">
-  <div align="center">
-    <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcm9kbXlhbWsycGNkbjlqOHd1d3V6cXp1YnBxYWM2Y2ZiN2g3YWpwMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5GuExKmluBdrrtAFwk/giphy.gif" width="100%" alt="Coding Animation" />
-  </div>
-</td>
-<td width="50%" style="border: none; background-color: transparent;">
-  <div align="center">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=im-sanka&theme=dark" alt="GitHub Streak" />
-  </div>
-  <br>
-  <div align="center">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=im-sanka&layout=compact&theme=dark" alt="Top Languages" />
-  </div>
-</td>
-</tr>
-</table>
+<p align="left">
+  <img align="left" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcm9kbXlhbWsycGNkbjlqOHd1d3V6cXp1YnBxYWM2Y2ZiN2g3YWpwMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5GuExKmluBdrrtAFwk/giphy.gif" width="400" alt="Coding Animation" />
+  
+  <img align="right" src="https://github-readme-streak-stats.herokuapp.com/?user=im-sanka&theme=dark" alt="GitHub Streak" width="400" />
+  
+  <img align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=im-sanka&layout=compact&theme=dark" alt="Top Languages" width="400" />
+</p>
+
+<br clear="both" />
 
 ---
 
@@ -72,4 +63,3 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/im-sanka)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/im-sanka)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/im-sanka)
