@@ -1,0 +1,104 @@
+name: Update README
+
+on:
+  schedule:
+    # Runs at 00:00 UTC every day
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Update README with latest activity
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs');
+
+            // Get user's recent activity
+            const username = context.repo.owner;
+
+            // Fetch recent commits across repositories
+            const { data: events } = await github.rest.activity.listPublicEventsForUser({
+              username: username,
+              per_page: 10
+            });
+
+            // Generate activity list
+            let activityList = '';
+            const processedEvents = new Set();
+
+            for (const event of events) {
+              const eventId = `${event.type}-${event.repo.name}-${event.created_at}`;
+              if (processedEvents.has(eventId)) continue;
+              processedEvents.add(eventId);
+
+              const date = new Date(event.created_at).toLocaleDateString('en-US', {
+                month: 'short',
+                day: 'numeric'
+              });
+
+              let action = '';
+              if (event.type === 'PushEvent') {
+                const commitCount = event.payload.commits?.length || 1;
+                action = `⚡ Pushed ${commitCount} commit${commitCount > 1 ? 's' : ''} to [${event.repo.name}](https://github.com/${event.repo.name})`;
+              } else if (event.type === 'CreateEvent') {
+                action = `🎉 Created ${event.payload.ref_type} in [${event.repo.name}](https://github.com/${event.repo.name})`;
+              } else if (event.type === 'PullRequestEvent') {
+                action = `🔀 ${event.payload.action} a pull request in [${event.repo.name}](https://github.com/${event.repo.name})`;
+              } else if (event.type === 'IssuesEvent') {
+                action = `📝 ${event.payload.action} an issue in [${event.repo.name}](https://github.com/${event.repo.name})`;
+              } else if (event.type === 'WatchEvent') {
+                action = `⭐ Starred [${event.repo.name}](https://github.com/${event.repo.name})`;
+              } else if (event.type === 'ForkEvent') {
+                action = `🔱 Forked [${event.repo.name}](https://github.com/${event.repo.name})`;
+              }
+
+              if (action) {
+                activityList += `- **${date}**: ${action}\n`;
+              }
+
+              if (activityList.split('\n').length > 6) break;
+            }
+
+            if (!activityList) {
+              activityList = '- No recent activity';
+            }
+
+            // Read current README
+            let readme = fs.readFileSync('README.md', 'utf8');
+
+            // Update the activity section
+            const activityMarker = '<!-- ACTIVITY:START -->';
+            const activityEndMarker = '<!-- ACTIVITY:END -->';
+
+            if (readme.includes(activityMarker) && readme.includes(activityEndMarker)) {
+              const before = readme.substring(0, readme.indexOf(activityMarker) + activityMarker.length);
+              const after = readme.substring(readme.indexOf(activityEndMarker));
+              readme = before + '\n' + activityList + after;
+
+              fs.writeFileSync('README.md', readme);
+              console.log('README updated successfully');
+            } else {
+              console.log('Activity markers not found in README');
+            }
+
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add README.md
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update README with latest activity" && git push)
