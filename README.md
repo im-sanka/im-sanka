@@ -1,19 +1,23 @@
 ## Hi 👋, I'm Sanka
 
-
-
-<div align="center">
-  <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcm9kbXlhbWsycGNkbjlqOHd1d3V6cXp1YnBxYWM2Y2ZiN2g3YWpwMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5GuExKmluBdrrtAFwk/giphy.gif" width="400" alt="Coding Animation" />
-</div>
-
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=im-sanka&theme=dark" alt="GitHub Streak" />
-</div>
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=im-sanka&layout=compact&theme=dark" alt="Top Languages" />
-</div>
+<table>
+<tr>
+<td width="50%">
+  <div align="center">
+    <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcm9kbXlhbWsycGNkbjlqOHd1d3V6cXp1YnBxYWM2Y2ZiN2g3YWpwMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5GuExKmluBdrrtAFwk/giphy.gif" width="100%" alt="Coding Animation" />
+  </div>
+</td>
+<td width="50%">
+  <div align="center">
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=im-sanka&theme=dark" alt="GitHub Streak" />
+  </div>
+  <br>
+  <div align="center">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=im-sanka&layout=compact&theme=dark" alt="Top Languages" />
+  </div>
+</td>
+</tr>
+</table>
 
 ---
 
