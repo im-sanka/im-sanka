@@ -1,5 +1,6 @@
 ## Hi 👋, I'm Sanka
 
+<div style="background-color: #0d1117; padding: 20px; border-radius: 10px;">
 <p align="left">
   <img align="left" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcm9kbXlhbWsycGNkbjlqOHd1d3V6cXp1YnBxYWM2Y2ZiN2g3YWpwMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5GuExKmluBdrrtAFwk/giphy.gif" width="400" alt="Coding Animation" />
   
@@ -9,6 +10,7 @@
 </p>
 
 <br clear="both" />
+</div>
 
 ---
 
@@ -52,6 +54,7 @@
 ---
 
 ## 📊 GitHub Activity
+I know it looks kinda odd, but I just set this as an automatic commit from my cloud (since I push my code in GitLab). I use it to gather an update from my AI workflow.
 
 <div align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=im-sanka&theme=react-dark" alt="Activity Graph" />
@@ -59,7 +62,11 @@
 
 ---
 
-## 🔗 Connect with me!
+
+<div align="center">
+
+### 🌐 Let's Connect & Collaborate!
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/im-sanka)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/im-sanka)
+
+</div>
