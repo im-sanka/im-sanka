@@ -10,11 +10,14 @@
 </p>
 
 <br clear="both" />
+
 </div>
 
 ---
+<div align="center">
 
 ## 💻 Techstacks
+
 
 ### Programming Languages
 [![Python](https://img.shields.io/badge/Python-14354C?style=flat-square&logo=python&logoColor=white)](https://python.org)
@@ -48,13 +51,13 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)](https://pytorch.org)
 [![Scikit Learn](https://img.shields.io/badge/scikit_learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)](https://scikit-learn.org)
 
+</div>
 
 
 
 ---
 
 ## 📊 GitHub Activity
-I know it looks kinda odd, but I just set this as an automatic commit from my cloud (since I push my code in GitLab). I use it to gather an update from my AI workflow.
 
 <div align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=im-sanka&theme=react-dark" alt="Activity Graph" />
