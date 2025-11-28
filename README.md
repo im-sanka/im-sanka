@@ -1,10 +1,12 @@
 ## Hi 👋, I'm Sanka
 
 <div style="background-color: #0d1117; padding: 20px; border-radius: 10px;">
-<p align="left">
-  <img align="left" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcm9kbXlhbWsycGNkbjlqOHd1d3V6cXp1YnBxYWM2Y2ZiN2g3YWpwMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5GuExKmluBdrrtAFwk/giphy.gif" width="400" alt="Coding Animation" />
-  
-  <img align="right" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=im-sanka&theme=github_dark" alt="Profile Summary" width="400" />
+<p align="center">
+  <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcm9kbXlhbWsycGNkbjlqOHd1d3V6cXp1YnBxYWM2Y2ZiN2g3YWpwMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5GuExKmluBdrrtAFwk/giphy.gif" width="400" alt="Coding Animation" />
+</p>
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=im-sanka&theme=github_dark" alt="Profile Summary" width="400" />
 </p>
 
 <br clear="both" />
